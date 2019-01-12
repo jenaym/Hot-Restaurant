@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>Tables Page</title>
+  
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  
+  </head>
+  
+  <body>
+  
+    <div class="container">
+  
+      <div class="jumbotron">
+        <h1 class="text-center"><span class="glyphicon glyphicon-fire"></span> Hot Restaurant</h1>
+        <hr>
+        <h2 class="text-center">Current Reservations and Waiting List</h2>
+        <br>
+  
+        <div class="text-center">
+          <a href="/reserve"><button class="btn btn-lg btn-danger"><span class="glyphicon glyphicon-credit-card"></span> Make Reservation</button></a>
+          <a href="/"><button class="btn btn-lg btn-default"><span class="glyphicon glyphicon-home"></span></button></a>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-lg-12">
+  
+          <!-- Current Tables -->
+          <div class="card">
+            <div class="card-header">
+              <h4>Current Reservations</h4>
+            </div>
+            <div class="card-body">
+              <ul id="tableList" class="list-group"><li class="list-group-item mt-4"><h2>Table #1</h2><hr><h2>ID: mj</h2><h2>Name: Mr. Jones</h2><h2>Email: jones@hotmail.com</h2><h2>Phone: 555-1234</h2></li><li class="list-group-item mt-4"><h2>Table #2</h2><hr><h2>ID: ms</h2><h2>Name: Mr. Smith</h2><h2>Email: billsmith@gmail.com</h2><h2>Phone: 425-555-1232</h2></li></ul>
+            </div>
+          </div>
+  
+          <!-- Waiting List -->
+          <div class="card mt-4">
+            <div class="card-header">
+              <h4>Waiting List</h4>
+            </div>
+            <div class="card-body">
+              <ul id="waitList" class="list-group"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+      <footer class="footer mt-4">
+        <div class="container">
+          <p>Control Panel</p>
+          <p><a href="#" id="clear">Clear Table</a> | <a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API
+              Wait List</a>
+        </p></div>
+      </footer>
+  
+    </div>
+  
+  
+  
+  
+  <!--Code to handle all form data goes below this point -->
+  <script type="text/javascript">
+  
+ 
+  </script>
+  
+  
+  </body></html>
